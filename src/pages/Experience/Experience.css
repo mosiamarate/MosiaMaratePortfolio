@@ -1,0 +1,131 @@
+/* ============================
+   Experience Page Styles (Timeline)
+   ============================ */
+.experience {
+  min-height: 100vh;
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #0a192f, #020c1b);
+  color: #ccd6f6;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #64ffda;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Timeline wrapper */
+.experience-list {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 30px;
+  border-left: 2px solid rgba(100, 255, 218, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Timeline card */
+.experience-card {
+  position: relative;
+  background: rgba(2, 12, 27, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.05);
+}
+
+/* Dot for each item */
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -41px;
+  width: 18px;
+  height: 18px;
+  background: #64ffda;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.8);
+}
+
+/* Hover effect */
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(100, 255, 218, 0.6);
+}
+
+.experience-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e6f1ff;
+}
+
+.experience-card h4 {
+  font-size: 18px;
+  color: #64ffda;
+  margin: 5px 0 12px;
+}
+
+.experience-card p {
+  font-size: 15px;
+  color: #8892b0;
+  margin: 6px 0;
+}
+
+.experience-date {
+  font-style: italic;
+  font-size: 14px;
+  color: #a8b2d1;
+  margin-top: 8px;
+}
+
+/* No data */
+.no-data {
+  font-size: 16px;
+  text-align: center;
+  color: #8892b0;
+  font-style: italic;
+}
+
+/* ============================
+   Responsive
+   ============================ */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .experience-list {
+    padding-left: 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 20px;
+  }
+
+  .experience-card h4 {
+    font-size: 16px;
+  }
+
+  .experience-card p {
+    font-size: 14px;
+  }
+
+  .experience-card::before {
+    left: -31px;
+    width: 14px;
+    height: 14px;
+  }
+}

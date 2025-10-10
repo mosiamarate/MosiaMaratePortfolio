@@ -1,0 +1,99 @@
+/* ============================
+   Education Page Styles
+   ============================ */
+.education-section {
+  min-height: 100vh; /* full page */
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #0a192f, #020c1b);
+  color: #ccd6f6;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #64ffda;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.education-item {
+  background: rgba(2, 12, 27, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.05);
+}
+
+.education-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(100, 255, 218, 0.5);
+}
+
+.education-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e6f1ff;
+}
+
+.education-content h4 {
+  font-size: 18px;
+  color: #64ffda;
+  margin: 5px 0 12px;
+}
+
+.education-content p {
+  font-size: 15px;
+  color: #8892b0;
+  margin: 6px 0;
+}
+
+.education-date {
+  font-style: italic;
+  font-size: 14px;
+  color: #a8b2d1;
+  margin-top: 8px;
+}
+
+.no-data {
+  font-size: 16px;
+  text-align: center;
+  color: #8892b0;
+  font-style: italic;
+}
+
+/* ============================
+   Responsive
+   ============================ */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .education-content h3 {
+    font-size: 20px;
+  }
+
+  .education-content h4 {
+    font-size: 16px;
+  }
+
+  .education-content p {
+    font-size: 14px;
+  }
+}

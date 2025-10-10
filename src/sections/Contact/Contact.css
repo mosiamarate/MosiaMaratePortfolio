@@ -1,0 +1,198 @@
+/* ============================
+   Contact Section
+   ============================ */
+.contact-section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #0a192f, #020c1b);
+  color: #ccd6f6;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #64ffda;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ============================
+   Contact Buttons (Phone + Email)
+   ============================ */
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border: 2px solid rgba(100, 255, 218, 0.5);
+  border-radius: 10px;
+  background: rgba(2, 12, 27, 0.7);
+  font-size: 15px;
+  color: #ccd6f6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.1);
+}
+
+.contact-btn svg {
+  font-size: 18px;
+  color: #64ffda;
+}
+
+.contact-btn:hover {
+  background: #64ffda;
+  color: #0a192f;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.8);
+}
+
+.contact-btn:hover svg {
+  color: #0a192f;
+}
+
+/* ============================
+   Social Icons (LinkedIn, GitHub, Instagram)
+   ============================ */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px; /* square with rounded edges */
+  border: 2px solid rgba(100, 255, 218, 0.5);
+  background: rgba(2, 12, 27, 0.7);
+  color: #64ffda;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: #64ffda;
+  color: #0a192f;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.8);
+}
+
+/* ============================
+   Responsive
+   ============================ */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .contact-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+
+/* ============================
+   Hire Me Form (Pill Style)
+   ============================ */
+.hire-me {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.hire-me h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #64ffda;
+}
+
+.hire-me-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs & Textarea */
+.hire-me-form input,
+.hire-me-form textarea {
+  background: rgba(2, 12, 27, 0.8);
+  border: 2px solid rgba(100, 255, 218, 0.4);
+  border-radius: 10px;
+  padding: 14px 20px;
+  color: #ccd6f6;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+.hire-me-form input:focus,
+.hire-me-form textarea:focus {
+  border-color: #64ffda;
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.6);
+}
+
+/* Submit Button */
+.btn-submit {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #64ffda;
+  color: #0a192f;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hire-me h3 {
+    font-size: 20px;
+  }
+
+  .hire-me-form input,
+  .hire-me-form textarea {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

@@ -1,0 +1,33 @@
+/
+├── public/
+│   └── index.html         // Main HTML file
+├── src/
+│   ├── assets/              // Images, fonts, etc.
+│   │   └── Mosia_Logo.webp
+│   ├── components/          // Reusable UI components
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Navbar.css
+│   │   ├── Footer/
+│   │   │   ├── Footer.jsx
+│   │   │   └── Footer.css
+│   │   └── ... (other small components)
+│   ├── sections/            // Major sections of your single-page portfolio
+│   │   ├── Hero/
+│   │   │   ├── Hero.jsx
+│   │   │   └── Hero.css
+│   │   ├── About/
+│   │   │   ├── About.jsx
+│   │   │   └── About.css
+│   │   ├── Projects/
+│   │   │   ├── Projects.jsx
+│   │   │   └── Projects.css
+│   │   └── ... (Skills, Contact, etc.)
+│   ├── App.jsx              // Main application component
+│   ├── main.jsx             // React entry point
+│   └── index.css            // Global styles
+├── .gitignore
+├── package.json
+└── vite.config.js
+
+uIi1mTIuWI42tSfk
