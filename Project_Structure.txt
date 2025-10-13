@@ -1,28 +1,37 @@
 /
 ├── public/
-│   └── index.html         // Main HTML file
+│   └── index.html         
 ├── src/
-│   ├── assets/              // Images, fonts, etc.
+│   ├── assets/              
 │   │   └── Mosia_Logo.webp
-│   ├── components/          // Reusable UI components
+│   ├── components/          
 │   │   ├── Navbar/
 │   │   │   ├── Navbar.jsx
 │   │   │   └── Navbar.css
 │   │   ├── Footer/
 │   │   │   ├── Footer.jsx
 │   │   │   └── Footer.css
-│   │   └── ... (other small components)
-│   ├── sections/            // Major sections of your single-page portfolio
+│   │   └── 
+│   ├── sections/            
 │   │   ├── Hero/
 │   │   │   ├── Hero.jsx
 │   │   │   └── Hero.css
 │   │   ├── About/
 │   │   │   ├── About.jsx
 │   │   │   └── About.css
+│   │   ├── Skills/
+│   │   │   ├── Skills.jsx
+│   │   │   └── Skills.css
 │   │   ├── Projects/
 │   │   │   ├── Projects.jsx
 │   │   │   └── Projects.css
-│   │   └── ... (Skills, Contact, etc.)
+│   │   ├── Game/
+│   │   │   ├── Game.jsx
+│   │   │   └── Game.css
+│   │   └──Contact/
+│   │       ├── Contact.jsx
+│   │       └── Contact.css
+│   ├── pages/               
 │   ├── App.jsx              // Main application component
 │   ├── main.jsx             // React entry point
 │   └── index.css            // Global styles
