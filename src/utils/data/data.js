@@ -14,8 +14,8 @@ import roadmapImg from "../../assets/projects/TechRoadMap.png";
 // import portfolioImg from "../../assets/projects/portfolio.png";
 // import flappyImg from "../../assets/projects/flappy.png";
 /* ============================
-   Skills
-   ============================ */
+  Skills
+  ============================ */
 export const skills = [
   { id: 1, name: "HTML5", icon: FaHtml5, level: "80%" },
   { id: 2, name: "CSS3", icon: FaCss3Alt, level: "80%" },
@@ -30,8 +30,8 @@ export const skills = [
 ];
 
 /* ============================
-   Projects
-   ============================ */
+  Projects
+  ============================ */
 
 export const projects = [
   {
@@ -68,8 +68,8 @@ export const projects = [
 
 
 /* ============================
-   Education
-   ============================ */
+  Education
+  ============================ */
 export const education = [
   {
     id: 1,
@@ -101,11 +101,20 @@ export const education = [
     description:
       "Completed Microsoft Azure Fundamentals course covering cloud concepts and core Azure services.",
   },
+
+  // {
+  //   id: 4,
+  // school: "Central University of Technology",
+  // degree: "Advances Diploma in Computer Networking",
+  // start_year: 2026,
+  // end_year: 2026,
+  // description: "Pursuing advanced studies in computer networking, focusing on network security, cloud computing, and advanced routing protocols.",
+  // },
 ];
 
 /* ============================
-   Experience
-   ============================ */
+  Experience
+  ============================ */
 export const experience = [
 
   {
@@ -150,8 +159,8 @@ export const experience = [
 ];
 
 /* ============================
-   Contact
-   ============================ */
+  Contact
+  ============================ */
 export const contact = [
   { id: 1, type: "phone", value: "+27 81 470 2140", link: "tel:+27814702140" },
   {

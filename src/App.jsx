@@ -6,6 +6,7 @@ import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
+import Game from "./sections/Game/Game";
 import Contact from "./sections/Contact/Contact";
 import Education from "./pages/Education/Education";
 import Experience from "./pages/Experience/Experience";
@@ -25,6 +26,7 @@ function App() {
               <About />
               <Skills />
               <Projects />
+              <Game />
               <Contact />
             </>
           }
