@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Game.css";
 
+// Generate random code icons
+const codeSymbols = ["{ }", "</>", "=>", "()", "[]", "++", "--", "&&", "//"];
+
 const Game = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [playerX, setPlayerX] = useState(200);
   const [fallingCodes, setFallingCodes] = useState([]);
   const gameAreaRef = useRef(null);
-
-  // Generate random code icons
-  const codeSymbols = ["{ }", "</>", "=>", "()", "[]", "++", "--", "&&", "//"];
 
   // Spawn a new falling code every 1.5s
   useEffect(() => {
