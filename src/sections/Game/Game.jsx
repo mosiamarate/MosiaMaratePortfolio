@@ -7,13 +7,14 @@ const codeSymbols = ["{ }", "</>", "=>", "()", "[]", "++", "--", "&&", "//"];
 const Game = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [gameStarted, setGameStarted] = useState(false);
   const [playerX, setPlayerX] = useState(200);
   const [fallingCodes, setFallingCodes] = useState([]);
   const gameAreaRef = useRef(null);
 
   // Spawn a new falling code every 1.5s
   useEffect(() => {
-    if (gameOver) return;
+    if (!gameStarted || gameOver) return;
     const spawnInterval = setInterval(() => {
       setFallingCodes((prev) => [
         ...prev,
@@ -27,11 +28,11 @@ const Game = () => {
     }, 1500);
 
     return () => clearInterval(spawnInterval);
-  }, [gameOver]);
+  }, [gameStarted, gameOver]);
 
   // Falling animation
   useEffect(() => {
-    if (gameOver) return;
+    if (!gameStarted || gameOver) return;
     const fallInterval = setInterval(() => {
       setFallingCodes((prevCodes) =>
         prevCodes
@@ -41,10 +42,11 @@ const Game = () => {
     }, 60);
 
     return () => clearInterval(fallInterval);
-  }, [gameOver]);
+  }, [gameStarted, gameOver]);
 
   // Collision detection
   useEffect(() => {
+    if (!gameStarted) return;
     const playerWidth = 60;
 
     fallingCodes.forEach((code) => {
@@ -62,10 +64,11 @@ const Game = () => {
         setGameOver(true);
       }
     });
-  }, [fallingCodes, playerX]);
+  }, [fallingCodes, playerX, gameStarted]);
 
   // Handle player movement
   const movePlayer = (direction) => {
+    if (!gameStarted || gameOver) return;
     if (direction === "left") setPlayerX((x) => Math.max(0, x - 30));
     if (direction === "right") setPlayerX((x) => Math.min(400, x + 30));
   };
@@ -80,29 +83,44 @@ const Game = () => {
     return () => window.removeEventListener("keydown", handleKeyPress);
   });
 
+  const startGame = () => {
+    setGameStarted(true);
+    setGameOver(false);
+    setScore(0);
+    setFallingCodes([]);
+  };
+
   const resetGame = () => {
     setScore(0);
     setGameOver(false);
     setFallingCodes([]);
+    setGameStarted(false);
   };
 
   return (
     <section className="game-section" id="game">
       <h2 className="section-title">🎮 Catch the Code</h2>
       <div className="game-container" ref={gameAreaRef}>
-        {/* Falling code elements */}
-        {fallingCodes.map((code) => (
-          <div
-            key={code.id}
-            className="code-symbol"
-            style={{ top: code.y, left: code.x }}
-          >
-            {code.symbol}
+        {!gameStarted && !gameOver && (
+          <div className="game-start">
+            <button onClick={startGame}>Start Game</button>
           </div>
-        ))}
+        )}
+
+        {/* Falling code elements */}
+        {gameStarted &&
+          fallingCodes.map((code) => (
+            <div
+              key={code.id}
+              className="code-symbol"
+              style={{ top: code.y, left: code.x }}
+            >
+              {code.symbol}
+            </div>
+          ))}
 
         {/* Player bar */}
-        <div className="player" style={{ left: playerX }}></div>
+        {gameStarted && <div className="player" style={{ left: playerX }}></div>}
 
         {/* Game Over */}
         {gameOver && (

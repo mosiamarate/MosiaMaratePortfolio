@@ -28,7 +28,7 @@ const Navbar = () => {
       {/* Resume Button */}
       <div className="nav-buttons">
         <a
-          href="/resume.pdf"
+          href="/src/assets/documentsMG_Marate_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="resume"

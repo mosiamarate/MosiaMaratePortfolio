@@ -2,16 +2,23 @@
 ├── public/
 │   └── index.html         
 ├── src/
-│   ├── assets/              
-│   │   └── Mosia_Logo.webp
+│   ├── assets/ 
+|   |   ├── projects/
+|   |   │   ├── TechRoadMap.png
+|   |   │   └── flappy.png
+|   |   ├── Mosia-Logo-NoBg.png
+|   |   ├── Mosia_Profile.webp
+|   |   ├── Mosia_Profile_JPG.jpg
+|   |   └── Mosia_Logo.webp               
+│   │   
 │   ├── components/          
 │   │   ├── Navbar/
 │   │   │   ├── Navbar.jsx
 │   │   │   └── Navbar.css
-│   │   ├── Footer/
-│   │   │   ├── Footer.jsx
-│   │   │   └── Footer.css
-│   │   └── 
+│   │   └── Footer/
+│   │       ├── Footer.jsx
+│   │       └── Footer.css
+│   │    
 │   ├── sections/            
 │   │   ├── Hero/
 │   │   │   ├── Hero.jsx
@@ -31,7 +38,21 @@
 │   │   └──Contact/
 │   │       ├── Contact.jsx
 │   │       └── Contact.css
-│   ├── pages/               
+│   ├── pages/ 
+│   │   ├── Education/
+│   │   │   ├── Education.jsx
+│   │   │   └── Education.css
+│   │   │   
+│   │   ├── Experience/
+│   │   │   ├── Experience.jsx
+│   │   │   └── Experience.css
+│   │   │   
+│   │   └─── Projectss/
+│   │      ├── Projects.jsx
+│   │      └── Projects.css 
+│   ├── utils/
+|   |   └──data/
+|   |      └──data.js
 │   ├── App.jsx              // Main application component
 │   ├── main.jsx             // React entry point
 │   └── index.css            // Global styles
