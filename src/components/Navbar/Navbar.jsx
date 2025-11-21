@@ -22,19 +22,20 @@ const Navbar = () => {
         <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
         <li><Link to="/education" onClick={closeMenu}>Education</Link></li>
         <li><Link to="/experience" onClick={closeMenu}>Experience</Link></li>
+        <li><Link to="/certifications" onClick={closeMenu}>Certifications</Link></li>
         <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
       </ul>
 
       {/* Resume Button */}
       <div className="nav-buttons">
         <a
-          href="/src/assets/documentsMG_Marate_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/documents/MG_Marate_CV.pdf"
+          download="Mosia_Marate_CV.pdf"
           className="resume"
-        >
+          onClick={closeMenu}
+          >
           Resume
-        </a>
+          </a>
       </div>
 
       {/* Hamburger for Mobile */}

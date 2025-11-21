@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { SiCisco } from "react-icons/si";
 import roadmapImg from "../../assets/projects/TechRoadMap.png";
+
 // import portfolioImg from "../../assets/projects/portfolio.png";
 // import flappyImg from "../../assets/projects/flappy.png";
 /* ============================
@@ -102,15 +103,55 @@ export const education = [
       "Completed Microsoft Azure Fundamentals course covering cloud concepts and core Azure services.",
   },
 
-  // {
-  //   id: 4,
-  // school: "Central University of Technology",
-  // degree: "Advances Diploma in Computer Networking",
-  // start_year: 2026,
-  // end_year: 2026,
-  // description: "Pursuing advanced studies in computer networking, focusing on network security, cloud computing, and advanced routing protocols.",
-  // },
+  {
+    id: 4,
+  school: "Central University of Technology",
+  degree: "Advances Diploma in Computer Networking",
+  start_year: 2026,
+  end_year: 2026,
+  description: "Pursuing advanced studies in computer networking, focusing on network security, cloud computing, and advanced routing protocols.",
+  },
 ];
+
+/* ============================
+  Certifications
+  ============================ */
+export const certifications = [
+  {
+    id: 1,
+    title: "CISCO Networking Basics",
+    issuer: "CISCO Networking Academy",
+    issue_date: "June 2024",
+    icon: "SiCisco",
+    description:
+      "Completed CISCO's Networking Basics course covering fundamental networking concepts.",
+    verfification_link:
+      "https://www.credly.com/badges/d356ac4c-40c0-4d6b-8d8e-ed8cd2b671cc/public_url",
+  },
+  {
+    id: 2,
+    title: "Microsoft Azure Fundamentals",
+    issuer: "Microsoft Learn",
+    issue_date: "October 2025",
+    icon: "FaMicrosoft",
+    description:
+      "Completed Microsoft Azure Fundamentals course covering cloud concepts and core Azure services.",
+    verfification_link:
+      "https://learn.microsoft.com/api/credentials/share/en-us/MosiaGideonMarate-3971/611DE0C0CEC24C6F?sharingId=793D53CB630EE84B",
+  },
+  {
+    id: 3,
+    title: "Network Security",
+    issuer: "CISCO Networking Academy",
+    issue_date: "June 2025",
+    icon: "SiCisco",
+    description:
+      "Completed CISCO's Network Security course covering essential network security principles and practices.",
+    verfification_link:
+      "https://www.credly.com/badges/016ce486-b58f-4382-b7e3-f9765ad635d0/public_url",
+  },
+];
+
 
 /* ============================
   Experience
@@ -122,7 +163,7 @@ export const experience = [
     company: "Central University of Technology",
     role: "IT Student Assistant (Part-time)",
     start_date: "Mar 2025",
-    end_date: "Present",
+    end_date: " Nov 2025",
     description:
       "Assist students with IT issues, maintain computer labs, and support faculty with tech needs.",
   },

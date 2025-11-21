@@ -9,6 +9,7 @@ import Projects from "./sections/Projects/Projects";
 import Game from "./sections/Game/Game";
 import Contact from "./sections/Contact/Contact";
 import Education from "./pages/Education/Education";
+import Certifications from "./pages/Certifications/Certifications";
 import Experience from "./pages/Experience/Experience";
 import ProjectPage from "./pages/Projects/ProjectPage";
 
@@ -34,6 +35,7 @@ function App() {
 
         {/* Pages */}
         <Route path="/education" element={<Education />} />
+        <Route path="/certifications" element={<Certifications />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/skills" element={<Skills />} />

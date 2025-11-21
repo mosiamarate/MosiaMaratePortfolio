@@ -10,7 +10,7 @@ const Skills = () => {
       <div className="skills-grid">
         {skills.length > 0 ? (
           skills.map((skill) => {
-            const Icon = skill.icon; // ✅ render as component
+            const Icon = skill.icon;
             return (
               <div className="skill-card" key={skill.id}>
                 <div className="skill-icon">

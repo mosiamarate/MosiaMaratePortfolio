@@ -93,6 +93,7 @@
   align-items: center;
   justify-content: flex-end;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 /* Resume Button */
@@ -112,6 +113,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  text-decoration: none;
 }
 
 /* Gradient glowing border */
