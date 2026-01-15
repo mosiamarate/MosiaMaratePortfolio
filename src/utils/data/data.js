@@ -38,7 +38,7 @@ export const projects = [
     description: "Personal portfolio built with React & custom data.js.",
     tech: ["React", "CSS", "JavaScript"],
     github: "https://github.com/mosiamarate/MosiaMaratePortfolio",
-    live: null,
+    live: "https://mosiaportfolio.vercel.app/",
     featured: true,
   },
   {
