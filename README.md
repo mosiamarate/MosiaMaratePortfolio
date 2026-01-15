@@ -48,7 +48,6 @@ Portfolio_Website/
 ├── public/
 │   ├── documents/
 |   |   └── MG_Marate_CV.pdf
-│   └── index.html         
 ├── src/
 │   ├── assets/ 
 |   |   ├── Mosia-Logo-NoBg.png
@@ -102,15 +101,16 @@ Portfolio_Website/
 │   │   │   ├── Experience.jsx
 │   │   │   └── Experience.css
 │   │   │   
-│   │   └─── Projectss/
-│   │      ├── Projects.jsx
-│   │      └── Projects.css 
+│   │   └── Projects/
+│   │       ├── Projects.jsx
+│   │       └── Projects.css 
 │   ├── utils/
 |   |   └──data/
 |   |      └──data.js
 │   ├── App.jsx              // Main application component
 │   ├── main.jsx             // React entry point
 │   └── index.css            // Global styles
+├── index.html               // HTML entry point
 ├── .gitignore
 ├── package.json
 └── vite.config.js
