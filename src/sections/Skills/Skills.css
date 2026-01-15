@@ -158,10 +158,14 @@
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 14px;
   }
-
+  
   .skill-card {
-    padding: 10px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
