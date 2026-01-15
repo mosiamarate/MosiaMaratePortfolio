@@ -21,8 +21,8 @@ A personal portfolio website designed to showcase my skills, projects, and exper
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/mosiamarate/Portfolio_Website
-   cd Portfolio_Website
+   git clone [https://github.com/mosiamarate/Portfolio_Website](https://github.com/mosiamarate/MosiaMaratePortfolio)
+   cd MosiaMaratePortfolio
    ```
 
 2. **Install dependencies**
