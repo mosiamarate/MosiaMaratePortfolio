@@ -1,11 +1,10 @@
 /
 ├── public/
+│   ├── documents/
+|   |   └── MG_Marate_CV.pdf
 │   └── index.html         
 ├── src/
 │   ├── assets/ 
-|   |   ├── projects/
-|   |   │   ├── TechRoadMap.png
-|   |   │   └── flappy.png
 |   |   ├── Mosia-Logo-NoBg.png
 |   |   ├── Mosia_Profile.webp
 |   |   ├── Mosia_Profile_JPG.jpg
@@ -15,6 +14,9 @@
 │   │   ├── Navbar/
 │   │   │   ├── Navbar.jsx
 │   │   │   └── Navbar.css
+│   │   ├── Sidebar/
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── Sidebar.css
 │   │   └── Footer/
 │   │       ├── Footer.jsx
 │   │       └── Footer.css
@@ -27,6 +29,8 @@
 │   │   │   ├── About.jsx
 │   │   │   └── About.css
 │   │   ├── Skills/
+│   │   │   ├── SkillBar.jsx
+│   │   │   ├── SkillBar.css
 │   │   │   ├── Skills.jsx
 │   │   │   └── Skills.css
 │   │   ├── Projects/
@@ -39,6 +43,11 @@
 │   │       ├── Contact.jsx
 │   │       └── Contact.css
 │   ├── pages/ 
+│   │   ├── Certifications/
+│   │   │   ├── Certifications.jsx
+│   │   │   ├── CertificationCard.jsx
+│   │   │   ├── Certifications.css
+│   │   │   └── useInView.js
 │   │   ├── Education/
 │   │   │   ├── Education.jsx
 │   │   │   └── Education.css

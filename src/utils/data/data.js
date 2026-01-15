@@ -10,10 +10,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { SiCisco } from "react-icons/si";
-import roadmapImg from "../../assets/projects/TechRoadMap.png";
 
-// import portfolioImg from "../../assets/projects/portfolio.png";
-// import flappyImg from "../../assets/projects/flappy.png";
 /* ============================
   Skills
   ============================ */
@@ -40,9 +37,8 @@ export const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio built with React & custom data.js.",
     tech: ["React", "CSS", "JavaScript"],
-    github: "https://github.com/mosiamarate",
+    github: "https://github.com/mosiamarate/Portfolio_Website",
     live: null,
-    image: "",
     featured: true,
   },
   {
@@ -52,7 +48,6 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     github: "https://github.com/mosiamarate/TechRoadMap",
     live: "https://thetechroadmap.vercel.app/",
-    image: roadmapImg,
     featured: true,
   },
   {
@@ -122,7 +117,7 @@ export const certifications = [
     title: "CISCO Networking Basics",
     issuer: "CISCO Networking Academy",
     issue_date: "June 2024",
-    icon: "SiCisco",
+    icon: SiCisco,
     description:
       "Completed CISCO's Networking Basics course covering fundamental networking concepts.",
     verfification_link:
@@ -133,7 +128,7 @@ export const certifications = [
     title: "Microsoft Azure Fundamentals",
     issuer: "Microsoft Learn",
     issue_date: "October 2025",
-    icon: "FaMicrosoft",
+    icon: FaMicrosoft,
     description:
       "Completed Microsoft Azure Fundamentals course covering cloud concepts and core Azure services.",
     verfification_link:
@@ -144,7 +139,7 @@ export const certifications = [
     title: "Network Security",
     issuer: "CISCO Networking Academy",
     issue_date: "June 2025",
-    icon: "SiCisco",
+    icon: SiCisco,
     description:
       "Completed CISCO's Network Security course covering essential network security principles and practices.",
     verfification_link:
@@ -207,8 +202,8 @@ export const contact = [
   {
     id: 2,
     type: "email",
-    value: "gideonmarate@gmail.com",
-    link: "mailto:gideonmarate@gmail.com",
+    value: "mosiamarate@gmail.com",
+    link: "mailto:mosiamarate@gmail.com",
   },
   {
     id: 3,

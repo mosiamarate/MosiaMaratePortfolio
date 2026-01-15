@@ -21,6 +21,7 @@
   gap: 25px;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .certification-card {
@@ -30,6 +31,7 @@
   padding: 25px;
   transition: all 0.3s ease;
   box-shadow: 0 0 15px rgba(100, 255, 218, 0.05);
+  width: 100%;
 }
 
 .certification-card:hover {
@@ -59,11 +61,19 @@
 .cert-link {
   color: #64ffda;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.16s ease;
+  display: inline-block;
+  /* make links easier to tap on mobile */
+  padding: 8px 10px;
+  border-radius: 8px;
+  word-break: break-word;
 }
 
-.cert-link:hover {
+.cert-link:hover,
+.cert-link:focus {
   text-shadow: 0 0 10px rgba(100, 255, 218, 0.8);
+  background: rgba(100, 255, 218, 0.03);
+  outline: none;
 }
 
 .cert-issuer,
@@ -78,17 +88,96 @@
   color: #8892b0;
 }
 
-/* Responsive */
+/* Responsive: tablets & small laptops */
+@media (max-width: 1024px) {
+  .certifications-grid {
+    gap: 20px;
+    max-width: 900px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+/* Responsive: phones & small screens */
 @media (max-width: 768px) {
   .section-title {
     font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .certifications-section {
+    padding: 60px 14px;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 10px;
+    max-width: 640px;
   }
 
   .certification-card {
     padding: 18px;
+    border-radius: 10px;
   }
 
   .certification-icon {
-    font-size: 36px;
+    font-size: 44px;
+  }
+
+  .certification-links {
+    gap: 8px;
+  }
+
+  .cert-link {
+    padding: 12px 14px;
+    font-size: 15px;
+    display: block;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .certifications-section {
+    padding: 48px 12px;
+  }
+
+  .certifications-grid {
+    gap: 14px;
+    padding: 0 12px;
+    max-width: 420px;
+  }
+
+  .certification-card {
+    padding: 14px;
+  }
+
+  .certification-icon {
+    font-size: 40px;
+  }
+
+  .cert-link {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .cert-issuer,
+  .cert-date {
+    font-size: 13px;
+  }
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .certification-card,
+  .certification-card:hover {
+    transition: none;
+    transform: none;
   }
 }

@@ -22,7 +22,7 @@ return (
             <div className="about-text">
                 <p>
                     Hi, I'm <span>MOSIA MARATE</span>, a passionate IT and Networking
-                    student with expertise in front-end web development. I create
+                    Graduate with expertise in front-end web development. I create
                     functional, visually appealing, and unique designs that bring ideas
                     to life.
                 </p>
@@ -31,7 +31,7 @@ return (
             {/* Contact + Socials */}
             <div className="about-contact">
                 <p><FaPhone className="icon"/> +27 81 470 2140</p>
-                <p><FaEnvelope className="icon"/> gideonmarate@gmail.com</p>
+                <p><FaEnvelope className="icon"/> mosiamarate@gmail.com</p>
                 <div className="social-links">
                     <a href="https://linkedin.com/in/mosiamarate" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                     <a href="https://github.com/mosiamarate" target="_blank" rel="noopener noreferrer"><FaGithub /></a>

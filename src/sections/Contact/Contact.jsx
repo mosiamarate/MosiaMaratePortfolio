@@ -74,8 +74,8 @@ const Contact = () => {
         <a href="tel:+27814702140" className="contact-btn">
           <FaPhone /> +27 81 470 2140
         </a>
-        <a href="mailto:gideonmarate@gmail.com" className="contact-btn">
-          <FaEnvelope /> gideonmarate@gmail.com
+        <a href="mailto:mosiamaratee@gmail.com" className="contact-btn">
+          <FaEnvelope /> mosiamarate@gmail.com
         </a>
       </div>
 

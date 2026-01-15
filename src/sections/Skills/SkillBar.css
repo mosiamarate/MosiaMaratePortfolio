@@ -1,0 +1,29 @@
+/* ============================
+   Skill Bar Component
+   ============================ */
+.skill-bar-container {
+  width: 100%;
+  background-color: #e0e0e0; /* Light grey background for the bar */
+  border-radius: 5px; /* Rounded corners for the bar */
+  margin: 10px 0; /* Spacing above and below the bar */
+  overflow: hidden; /* Ensures the fill stays within the rounded corners */
+}
+
+.skill-bar-fill {
+  height: 100%; /* Take full height of the container */
+  background-color: #4CAF50; /* Green color for the fill */
+  width: 0; /* Initial width for animation */
+  border-radius: 5px; /* Rounded corners for the fill */
+  text-align: right; /* Align text to the right */
+  padding-right: 5px; /* Padding for the text */
+  color: white; /* Color of the percentage text */
+  font-size: 0.8em; /* Size of the percentage text */
+  line-height: 20px; /* Vertically center the text */
+  transition: width 1s ease-in-out; /* Smooth transition for width changes */
+}
+
+.skill-bar-label {
+  font-size: 0.9em; /* Size of the skill label */
+  color: #333; /* Color of the skill label */
+  margin-bottom: 5px; /* Space between label and bar */
+}
