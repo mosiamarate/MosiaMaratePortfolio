@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Sidebar />
       <Routes>
         {/* Homepage */}
         <Route
@@ -45,6 +46,7 @@ function App() {
 
       </Routes>
       <Footer />
+
     </>
   );
 }
