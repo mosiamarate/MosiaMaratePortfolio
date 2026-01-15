@@ -4,8 +4,6 @@ import useInView from "../../hooks/useInView.js";
 import "./SkillBar.css";
 
 const SkillBar = ({ skill, proficiency }) => {
-  // The ref will be attached to the component's root element.
-  // isInView will be true when the component is at least 10% visible.
   const [ref, isInView] = useInView({ threshold: 0.1 }, true);
 
   const barStyle = {
