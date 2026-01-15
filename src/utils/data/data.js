@@ -37,7 +37,7 @@ export const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio built with React & custom data.js.",
     tech: ["React", "CSS", "JavaScript"],
-    github: "https://github.com/mosiamarate/Portfolio_Website",
+    github: "https://github.com/mosiamarate/MosiaMaratePortfolio",
     live: null,
     featured: true,
   },
@@ -114,7 +114,7 @@ export const education = [
 export const certifications = [
   {
     id: 1,
-    title: "CISCO Networking Basics",
+    title: "Networking Basics",
     issuer: "CISCO Networking Academy",
     issue_date: "June 2024",
     icon: SiCisco,
@@ -144,6 +144,30 @@ export const certifications = [
       "Completed CISCO's Network Security course covering essential network security principles and practices.",
     verfification_link:
       "https://www.credly.com/badges/016ce486-b58f-4382-b7e3-f9765ad635d0/public_url",
+  },
+
+  {
+    id: 4,
+    title: "Introduction to Modern AI",
+    issuer: "CISCO Networking Academy",
+    issue_date: "May 2025",
+    icon: SiCisco,
+    description:
+      "Completed CISCO's Introduction to Modern AI course covering fundamental AI concepts and applications.",
+    verfification_link:
+      "https://www.credly.com/badges/09c36d3b-5c96-4af0-9d7b-25ad60c51201/public_url",
+  },
+
+  {
+    id: 5,
+    title: "Introduction to Cybersecurity",
+    issuer: "CISCO Networking Academy",
+    issue_date: "April 2024",
+    icon: SiCisco,
+    description:
+      "Completed CISCO's Introduction to Cybersecurity course covering fundamental cybersecurity concepts and practices.",
+    verfification_link:
+      "https://www.credly.com/badges/750641b7-9bd0-4d8a-bdf5-3225086ce8ed/public_url"
   },
 ];
 
