@@ -101,7 +101,7 @@ export const education = [
   {
     id: 4,
   school: "Central University of Technology",
-  degree: "Advances Diploma in Computer Networking",
+  degree: "Advanced Diploma in Computer Networking",
   start_year: 2026,
   end_year: 2026,
   description: "Pursuing advanced studies in computer networking, focusing on network security, cloud computing, and advanced routing protocols.",
