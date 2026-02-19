@@ -176,9 +176,19 @@ export const certifications = [
   Experience
   ============================ */
 export const experience = [
-
+  
   {
     id: 1,
+    company: "Free State Office of Premier",
+    role: "Network Support Intern",
+    start_date: "Feb 2026",
+    end_date: "Present",
+    description: 
+      "Assit a support technician with call logs and network infrastructure, while learning about real world network architecture and systems",
+  },
+
+  {
+    id: 2,
     company: "Central University of Technology",
     role: "IT Student Assistant (Part-time)",
     start_date: "Mar 2025",
@@ -188,7 +198,7 @@ export const experience = [
   },
 
   {
-    id: 2,
+    id: 3,
     company: "VermiVillage",
     role: "Front-End Developer & Digital Strategist",
     start_date: "Dec 2024",
@@ -198,7 +208,7 @@ export const experience = [
   },
 
   {
-    id: 3,
+    id: 4,
     company: "Central University of Technology - Poetry Association",
     role: "Public Relation Officer",
     start_date: "Feb 2023",
@@ -208,7 +218,7 @@ export const experience = [
   },
 
   {
-    id: 4,
+    id: 5,
     company: "Phehello Secondary School",
     role: "Education Assistant - Mathematics",
     start_date: "Oct 2021",
@@ -216,6 +226,7 @@ export const experience = [
     description:
       "Assisted Grade 11 students and teachers with mathematics concepts and exam preparation.",
   },
+  
 ];
 
 /* ============================
