@@ -29,7 +29,6 @@
   max-width: 900px;
   margin: 0 auto;
   padding-left: 30px;
-  border-left: 2px solid rgba(100, 255, 218, 0.4);
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -47,7 +46,7 @@
 }
 
 /* Dot for each item */
-.experience-card::before {
+/* .experience-card::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -57,7 +56,7 @@
   background: #64ffda;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(100, 255, 218, 0.8);
-}
+} */
 
 /* Hover effect */
 .experience-card:hover {

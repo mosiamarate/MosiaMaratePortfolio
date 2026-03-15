@@ -3,6 +3,7 @@ import "./About.css";
 import profileWebP from "../../assets/Mosia_Profile.webp";
 import profileJPG from "../../assets/Mosia_Profile_JPG.jpg";
 import { FaPhone, FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const About = () => {
 return (
@@ -26,6 +27,11 @@ return (
                     functional, visually appealing, and unique designs that bring ideas
                     to life.
                 </p>
+
+                <div className="about-buttons">
+                    <Link to="/Certifications" className="primary btn">Certifications</Link>
+                    <Link to="/Experience" className="secondary btn">Experience</Link>
+                </div>
             </div>
 
             {/* Contact + Socials */}

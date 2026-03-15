@@ -106,6 +106,40 @@
 
 }
 
+/* Buttons */
+.about-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  animation-delay: 0.7s;
+  margin: 20px;
+}
+
+/* Primary */
+.about-buttons .btn.primary {
+  background: transparent;
+  color: #64ffda;
+}
+
+.about-buttons .btn.primary:hover {
+  background: rgba(100, 255, 218, 0.1);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Secondary */
+.about-buttons .btn.secondary {
+  background: #64ffda;
+  color: #0a192f;
+}
+
+.about-buttons .btn.secondary:hover {
+  background: transparent;
+  color: #64ffda;
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.6);
+  transform: translateY(-3px);
+}
 
 /* Responsive */
 @media (max-width: 900px) {

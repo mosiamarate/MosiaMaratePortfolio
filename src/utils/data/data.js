@@ -202,7 +202,7 @@ export const experience = [
     company: "VermiVillage",
     role: "Front-End Developer & Digital Strategist",
     start_date: "Dec 2024",
-    end_date: "Present",
+    end_date: "Dec 2025",
     description:
       "Worked on SEO, AdSense strategy, and improving VermiVillage's WIX-based site.",
   },
