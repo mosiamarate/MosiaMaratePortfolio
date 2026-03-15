@@ -69,6 +69,15 @@ export const projects = [
 export const education = [
   {
     id: 1,
+  school: "Central University of Technology",
+  degree: "Advanced Diploma in Computer Networking",
+  start_year: 2026,
+  end_year: 2026,
+  description: "Pursuing advanced studies in computer networking, focusing on network security, cloud computing, and advanced routing protocols.",
+  },
+
+  {
+    id: 2,
     school: "Central University of Technology",
     degree: "Diploma in Computer Networking",
     start_year: 2022,
@@ -78,7 +87,7 @@ export const education = [
   },
 
   {
-    id: 2,
+    id: 3,
     school: "CISCO Networking Academy",
     degree: "Networking Basics Course",
     start_year: 2024,
@@ -89,7 +98,7 @@ export const education = [
   },
   
   {
-    id: 3,
+    id: 4,
     school: "Microsoft Learn",
     degree: "Microsoft Azure Fundamentals",
     start_year: 2025,
@@ -98,14 +107,6 @@ export const education = [
       "Completed Microsoft Azure Fundamentals course covering cloud concepts and core Azure services.",
   },
 
-  {
-    id: 4,
-  school: "Central University of Technology",
-  degree: "Advanced Diploma in Computer Networking",
-  start_year: 2026,
-  end_year: 2026,
-  description: "Pursuing advanced studies in computer networking, focusing on network security, cloud computing, and advanced routing protocols.",
-  },
 ];
 
 /* ============================

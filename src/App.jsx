@@ -27,6 +27,7 @@ function App() {
               <Hero />
               <About />
               <Skills />
+              <Education />
               <Projects />
               <Game />
               <Contact />
