@@ -171,11 +171,17 @@
   color: #64ffda;
 }
 
+.level{
+  margin-top: 20px;
+  font-size: 18px;
+  color: #64ffda;
+}
+
 /* Responsive */
 @media (max-width: 500px) {
   .game-container {
     width: 90%;
-    height: 350px;
+    height: 400px; /* Keep height consistent for game logic stability */
   }
 
   .player {

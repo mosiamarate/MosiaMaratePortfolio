@@ -2,7 +2,7 @@
    About Section
    ============================ */
 .about-section {
-  padding: 60px 20px;
+  padding: 40px 20px;
   background-color: #0a192f;
   color: #ccd6f6;
   text-align: center;
@@ -10,10 +10,12 @@
 }
 
 .about-title {
-  font-size: 28px;
+  font-size: clamp(26px, 5vw, 32px);
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #64ffda;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Layout container */
@@ -21,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -29,13 +31,11 @@
 
 /* Profile image */
 .about-image img {
-  width: 220px;
-  height: 220px;
-  border-radius: 12px;
-  object-fit: cover;
-  border: 3px solid #64ffda;
-  box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
-  transition: transform 0.3s ease;
+ width: 220px;
+ height: 220px;
+ border-radius: 6px;
+ object-fit: cover;
+ 
 }
 
 .about-image img:hover {
@@ -47,9 +47,10 @@
   flex: 1;
   max-width: 500px;
   text-align: left;
-  font-size: 16px;
+  font-size: 1.05rem;
   line-height: 1.6;
   color: #8892b0;
+  padding: auto;
 }
 
 .about-text span {
@@ -109,10 +110,11 @@
 /* Buttons */
 .about-buttons {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   animation-delay: 0.7s;
-  margin: 20px;
+  margin: 0;
+  width: 100%;
 }
 
 /* Primary */
@@ -143,17 +145,45 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .about-section {
+    padding: 30px 20px;
+  }
+
   .about-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 20px;
   }
 
+  .about-image { order: 1; }
+  
   .about-text {
+    order: 2;
     text-align: center;
+    max-width: 100%;
   }
+
+  .about-buttons { order: 3; }
 
   .about-contact {
+    order: 4;
     text-align: center;
+    min-width: 100%;
+    margin-top: 5px;
+  }
+
+  .about-contact p {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 60px 15px;
   }
 }

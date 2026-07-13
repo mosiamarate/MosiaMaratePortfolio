@@ -25,6 +25,8 @@ export const skills = [
   { id: 8, name: "Git", icon: FaGitAlt, level: "60%" },
   { id: 9, name: "Azure", icon: FaMicrosoft, level: "50%"},
   { id: 10, name: "Packet Tracer", icon: SiCisco, level: "70%"},
+  { id: 11, name: "Network Troubleshooting", icon: FaMicrosoft, level: "80%"},
+  { id: 12, name: "Cabling", icon: SiCisco, level: "70%"},
 ];
 
 /* ============================
@@ -35,7 +37,7 @@ export const projects = [
   {
     id: 1,
     title: "Portfolio Website",
-    description: "Personal portfolio built with React & custom data.js.",
+    description: "Personal portfolio showcasing my coding skills and programming capabilities, built with React & custom data.js.",
     tech: ["React", "CSS", "JavaScript"],
     github: "https://github.com/mosiamarate/MosiaMaratePortfolio",
     live: "https://mosiaportfolio.vercel.app/",
@@ -48,10 +50,19 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     github: "https://github.com/mosiamarate/TechRoadMap",
     live: "https://thetechroadmap.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
+    title: "OneStep",
+    description: "OneStep is a calm productivity and focus web app designed to help students and young professionals slow down, check in their emotions, and focus on one task at a time.",
+    tech: ["Next.JS", "TypeScript", "PostCSS", "Firebase"],
+    live: "https://onestepsandone.vercel.app/",
+    featured: true,
+
+  },
+  {
+    id: 4,
     title: "Flippy Bird Game",
     description: "Simple Flappy Bird game using Python and Pygame.",
     tech: ["Python", "Pygame"],

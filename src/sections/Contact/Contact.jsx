@@ -12,8 +12,8 @@ import "./Contact.css";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [sending, setSending] = useState(false);               // ⏳ Loading state
-  const [popup, setPopup] = useState({ show: false, type: "", message: "" }); // 🎉 Popup state
+  const [sending, setSending] = useState(false);               // Loading state
+  const [popup, setPopup] = useState({ show: false, type: "", message: "" }); // Popup state
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -41,7 +41,7 @@ const Contact = () => {
           setForm({ name: "", email: "", message: "" });
           setSending(false);
 
-          setTimeout(() => setPopup({ show: false }), 3000);
+          setTimeout(() => setPopup({ show: false }), 10000);
         },
         (error) => {
           console.error("FAILED...", error);
@@ -53,7 +53,7 @@ const Contact = () => {
           });
 
           setSending(false);
-          setTimeout(() => setPopup({ show: false }), 8000);
+          setTimeout(() => setPopup({ show: false }), 10000);
         }
       );
   };
