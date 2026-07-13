@@ -26,7 +26,7 @@ export const skills = [
   { id: 9, name: "Azure", icon: FaMicrosoft, level: "50%"},
   { id: 10, name: "Packet Tracer", icon: SiCisco, level: "70%"},
   { id: 11, name: "Network Troubleshooting", icon: FaMicrosoft, level: "80%"},
-  { id: 12, name: "Cabling", icon: SiCisco, level: "70%"},
+  { id: 12, name: "Network Cabling", icon: SiCisco, level: "90%"},
 ];
 
 /* ============================
